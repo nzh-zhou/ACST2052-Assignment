@@ -1,0 +1,55 @@
+---
+title: "ARB Corporation Limited Financial Health Report"
+author: "Duncan Dingley, Jeffery Lee, Dean Milne, Ze Hong Zhou"
+date: '`r paste0("2022-05-06 (last edited ", format(Sys.time(), "%Y-%m-%d"), ")")`'
+output:
+  bookdown::pdf_document2:
+    citation_package: biblatex
+bibliography: references.bib
+link-citations: TRUE
+biblio-style: authoryear
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(kableExtra)
+
+colorise <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color,
+      x)
+  } else x
+}
+```
+
+&nbsp;
+
+This report is written in R markdown. You can find the source code [`r colorise("here", "blue")`](https://github.com/nzh-zhou/ACST2052-Assignment) **after I make the repo public**.
+
+# Executive Summary
+
+no author test in-line citation (@ARB-IBIS, @BAP-IBIS, @ARB-Yahoo, @BAP-Yahoo)
+
+with author test in-line citation (@baseR)
+
+# Business Strategy
+
+# Financial Statement Analysis
+
+# Industry Analysis
+
+# Stock Price Performance
+
+# Conclusion and Outlook opinion
+
+# References
+
+<div id="refs"></div>
+
+
+
+
