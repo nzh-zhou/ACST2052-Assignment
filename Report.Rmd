@@ -12,41 +12,108 @@ biblio-style: authoryear
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-library(tidyverse)
-library(kableExtra)
-
-colorise <- function(x, color) {
-  if (knitr::is_latex_output()) {
-    sprintf("\\textcolor{%s}{%s}", color, x)
-  } else if (knitr::is_html_output()) {
-    sprintf("<span style='color: %s;'>%s</span>", color,
-      x)
-  } else x
-}
 ```
-
-&nbsp;
-
-This report is written in R markdown. You can find the source code [`r colorise("here", "blue")`](https://github.com/nzh-zhou/ACST2052-Assignment) **after I make the repo public**.
 
 # Executive Summary
 
-no author test in-line citation (@ARB-IBIS, @BAP-IBIS, @ARB-Yahoo, @BAP-Yahoo)
+The purpose of this report is to evaluate the financial performance of ARB Corporate Ltd (ARB) and compare it to both the industry and competitor Bapcor Ltd (BAP). Analysis of ARB’s financial performance indicates it has gained profitability from 2017 to 2021 despite challenges from COVID and the industry’s decline. This is mainly due to their business strategy giving them a competitive advantage over other companies. However, their operating efficiency is not up to par with the paired competitor but shows growth over time. Despite this, ARB is more financially healthy than their paired competitor as their liquidity and solvency is quite strong. It can be concluded that ARB has a positive outlook regarding profitability, financial health and operating efficiency.
 
-with author test in-line citation (@baseR)
 
 # Business Strategy
 
+ARB is an Australian owned public company that designs, manufactures and sells automotive accessories. Examples of their products are protection equipment such as bull bars, rear protection, & side rails, and 4x4 storage solutions such as drawers, slide kitchens, and canopies. ARB has warehouses in Australia, Thailand, New Zealand, the US, the Czech Republic, and the United Arab Emirates, and currently manufactures in Australia and Thailand (@ARB-IBIS).
+
+The company first designs (or outsources) their products based on consumer demand. They invest heavily into R&D in order to maintain their long term competitive advantage (@2021report). For example, in 2017, ARB air freighted the JL series Jeep Wrangler shortly after its launch from the US to Australia to allow it to design and manufacture proprietary accessories before its competitors (@ARB-IBIS). The company also invests heavily into expanding their manufacturing capacity, as seen in their recent factory constructions in Thailand (@2021report).
+
+The company then manufactures its products in Australia and Thailand, and distributes it to wholesalers or retailers worldwide. It has secured partnerships with many local distributors worldwide, particularly those in areas with similar off-road conditions, like Saudi Arabia (@ARB-IBIS). ARB does participate in retailing themselves, but only owning 29 out of the total 70 ARB branded retail stores in Australia (@2021report).
+
+As will be seen in the analysis in the following sections, ARB’s business strategy has been highly effective in producing high profitability and maintaining good financial health.
+
 # Financial Statement Analysis
+
+## Profitability
+
+Using horizontal analysis for 2017-2021, ARB saw increases in revenue and net profit despite industry decreases. In an environment with increasing cheap import competition and a change in consumer demand from large to small and fuel efficient vehicles (@manu-IBIS), much of this can be attributed to ARB’s aforementioned competitive advantage and economies of scale, as it’s the largest company in the manufacturing industry. In the financial year ending (FYE) 2020, there was a much larger increase in the cost of goods sold (COGS) at 9.68% compared to revenue at 4.57% due to logistical and supply chain constraints arising from the pandemic (@2021report). Although partially counteracted by the company’s reduction in purchasing operating goods and services, net profit growth was low in the FYE 2020 at 0.26%. In the following year, there was a large increase in global demand for the company’s products as domestic restrictions eased (@2021report). With low industry supply due to supply chain disruptions, and many firms leaving the industry due to import competition, ARB charged a high markup on their products and achieved a high net profit increase of 97.05%.
+
+The common-size analysis of ARB’s income statement shows trends for similar reasons as outlined before. The company’s competitive advantage and economies of scale benefits have allowed it to achieve a high net profit as a proportion of revenue of around 12% in the pre-covid FYE 2017 to 2019, much higher than the industry average of around 4% (@manu-IBIS). In the FYE 2020, the COGS as a proportion of revenue increased by over 2% due to supply chain disruptions, but a reduction in operational expenses by nearly 3.5% of revenue resulted in a minimal change in net profit. In the next financial year, a high markup and increased revenue brought down many of the expenses as a proportion of revenue, leading to a high net profit as a percentage of revenue of 18.04%.
+
+By applying the Du Point technique, it is clear how ARB achieves its high profitability. As discussed previously, ARB achieved a higher-than-industry-average operating margin from FYE 2017-2021. Coupled with a slightly higher asset turnover ratio compared to the industry average, ARB’s ROA is also much higher than the industry average since 2017. During the FYE 2018 to 2020, ARB has maintained a high operating profit margin, however, its asset turnover has decreased, due to increased import competition and reduced travel demand during lockdowns. During the FYE 2021, ARB charged a higher operating profit margin to achieve a very high ROA. ARB’s low debt capital structure paired with a high non-interest to interest earning liability ratio results in a compound leverage ratio greater than one. Thus, the company’s ROA has been higher than its cost of capital. This high profitability is confirmed by calculating the ROE, which is much higher than the industry average since 2017.
+
+ARB’s price to earnings (PE) ratio increased from the FYE 2017 to the FYE 2018. This was driven by an increase in the company’s share price, which was possibly due to the positive reception of new product releases such as LINX, a long-term development project by ARB (@2018report). In the following year, the PE ratio decreased due to the net profit increasing. After, the PE ratio decreased, driven by lower investor expectations from low demand in 2020 and high EPS from high demand in 2021.
+
+The book value per share increased at an increasing rate due to positive net profit growth and low total shares growth. For the FYE 2018 to 2020, this drove a decreasing market to book value ratio. In the FYE 2021, this ratio increased dramatically, driven by the substantial increase in the average price per share as a result of high investor expectations from the high 97% net profit growth.
+
+Therefore, ARB’s competitive advantage has allowed it to maintain a high profitability, while changing market conditions has resulted in some volatility in its profitability.
+
+## Operating Efficiency
+
+ARB’s asset turnover in the FYE 2021 was 1.09, which was higher than the industry average of 0.87 (@manu-IBIS). This can be attributed to its maintenance of competitive advantage since 2017 and choosing products to meet consumer demand. However, this ratio declined from FYE 2018 to 2020 from increased import competition and a change in consumer demand from large to small vehicles. The asset turnover ratio increased in the FYE 2021 as local travel demand increased.
+
+In FYE 2021, ARB’s inventory turnover ratio was 1.91, which was much lower than the industry average of 5.25 (@manu-IBIS). This may be due to ARB keeping large inventories in their warehouses as well as it being part of a large number of niche markets, and hence having slow demand for a variety of specific car accessory products. ARB has maintained a low inventory turnover ratio between 1.61 to 1.91 since 2017.
+
+ARB’s receivable turnover ratio was 8.90 in the FYE 2021, which was lower than the industry average of 11.18 (@manu-IBIS). This may indicate lower efficiency in collecting accounts receivable or a more lenient credit policy. ARB has maintained a receivable turnover between 7.70 and 7.95 in the FYE 2018 to 2020, which increased in the FYE 2021, indicating that a greater proportion of the increased demand for the company’s products is paid with cash.
+
+## Risk
+
+Using common size analysis we have seen consistent proportions of current liabilities and current assets on the balance sheet. CA’s have been triple the value of CL’s, hence the strong liquidity of the company and the ability to pay short term debts have remained relatively constant since 2017. In terms of solvency, the total outstanding debt on the balance sheet has increased, equity has decreased, and assets have fluctuated slightly. From this, we can extrapolate that the solvency of the company has somewhat weakened. 
+
+The horizontal analyses of the balance sheet shows ARB’s current and hence total liability growth for all years except 2019. The company’s ability to pay short term debt was affected by this growth as CA’s also grew significantly. Equity and total assets also experienced growth; though less significantly and thus hindering the company’s solvency. Financial ratios can reveal more about solvency and liquidity.
+ 
+The high current ratio (above 3) and quick ratio (around 1.4 and always above 1) for ARB over the past four years signals the company’s ability to meet short-term obligations, with its semi-liquid and liquid assets. They have generally increased, from the accumulation of inventory and receivables, but from 2020-2021, the current ratio dropped due to a large debt issue, while the quick ratio rose due to a large increase in cash. The deviations from the trend for both ratios are mainly due to repurchase and issuing of debt. ARB does have statistically high current and quick ratios revealing its confidence in paying back short term debt, but possibly indicating that the company is not under-utilising short-term debt, which may explain the large issuing of debt between 2020-2021. 
+ 
+ARB’s debt-to-capital and debt-to-equity ratio measure its financial leverage (and hence risk). ARB experienced a general increase in both ratios since 2017, due to increasing financing by debt rather than equity. However, as of 2021, the DC and DE ratios were 26.2% and 35% respectively, being quite low, hence its solvency ratios indicate a financially healthy and non-risky company. 
 
 # Industry Analysis
 
+ARB is involved in the manufacturing and wholesale industry. This is because ARB earns revenue in the manufacturing industry by selling products they made to distribution centres both domestically and overseas. Subsequently, the distribution centres wholesale stock to retail stores, thus generating revenue for the wholesale industry. ARB is the only major company in the Australian automotive parts and accessories manufacturing industry. Most other companies in the industry specialise in niche products, hence, preventing market dominance and reduced competition. ARB is also part of the wholesale industry with competitors being GPC Asia Pacific Holdings Pty Ltd and Toyota Motor Corporation Australia Limited. Both competitors distribute automotive parts and accessories. The wholesale industry as opposed to the manufacturing industry is more competitive for ARB as indicated by its 2-3% market share, whilst GPC holds 7% and Toyota holds 4-5% of market share.
+
+The operating differences between ARB and BAP are that ARB is mainly involved in manufacturing and distribution whereas BAP deals with distribution, wholesaling and retailing of the products they hand pick. ARB’s focuses on exportations as there is stronger global demand whereas BAP is limited to local demand. Therefore, ARB has the freedom to produce new products that meet the demands of overseas consumers while BAP is limited in the amount of products they provide. Also, ARB focuses more on 4WD cars whereas BAP provides more general products. ARB’s specialisation would allow for higher profit margin due to the lack of competition in this market, and BAP would have lower profit margins due to lack of product differentiation. However, a benefit of BAP’s strategy would be comparatively higher sales. 
+
+## Profitability
+
+Common size analysis shows ARB’s profit as a proportion of revenue exceeded BAP’s since 2017. BAP’s proportion was mostly around 6% while ARB experienced from 12% to 18.04% (2021), hence ARB has a stronger profitability per unit of revenue. 
+
+Using horizontal analysis, ARB saw revenue and net profit growth from 2017-2021. In 2021, the company had a massive 34% revenue and 97% net profit growth. BAP has experience similar (though less extreme)  growth. This metric shows the strong profitability of both companies since 2017.
+
+ARB has had a notably greater ROA than BAP since 2017, by a factor of above 2. This is because, despite BAP’s high EBIT, it is generated from high total assets. This shows ARB’s greater profit production efficiency and stronger profitability overall; however, the industry average ROA is 4.43%; both companies produce revenue very efficiently relative to the market.  
+ 
+The ROE of both ARB and BAP have been very similar over the past few years. The mean for both companies sit at roughly 18%, with that of ARB being slightly higher. According to IBISWorld, the industry average for ROE is 9.84%, thus both companies are considered highly profitable using this metric.  
+ 
+Historically, BAP has had a much lower PE ratio than the competing firm ARB. BAP has had a mean ratio of 2608.39% while ARB’s has been 5552.90%. The PE ratio evaluates what the market is willing to pay based on the earnings of a company, thus showing that the expected profitability of ARB is greater than BAP.
+ 
+The PB ratio has historically been much larger for ARB than BAP; the mean PB ratio for ARB has been 967.8% and 278.3% for BAP since 2017. This large disparity in this value suggests  ARB is more profitable as investors are paying a premium to the book value because of a high ROA. 
+
+## Operating efficiency
+
+The receivable and inventory turnover of ARB since 2017 have been slightly lower than BAP, indicating BAP is more efficient at collecting receivables from clients, and producing sales from inventory. The former suggests ARB has a more lax collection process and conservative credit policy when compared to BAP, while the latter suggests ARB purchases excessive inventory for the demand level (conversely, BAP too little). 
+
+The asset turnover over the last 4 years of ARB have all been greater than the asset turnover of BAP. This indicates that ARB has better utilization and management of their assets in order to generate revenue than BAP. 
+
+Overall, BAP is more efficient in their management of account receivables and inventory, whereas ARB is more efficient in their utilization and management of assets in generating revenue.
+
+## Risk 
+
+The common size balance sheet for both ARB and BAP illustrate a similar outlook for liquidity and solvency. CAs make up a larger proportion of the balance sheet than CLs for ARB, indicating lower liquidity risk. Furthermore, equity to total liabilities ratio is much higher for ARB than BAP; the latter company holds greater risk for investors.  
+
+The liquidity of both companies has remained relatively stable; both ARB’s and BAP’s CAs and CLs are somewhat positively correlated. In the case of solvency prospects, total equity for BAP is growing at a faster rate than total liabilities, meaning that the company’s risk is decreasing. The opposite is true for ARB. 
+
+Over the past few years, ARB has had a higher current ratio than BAP, who experienced a strong ratio of around 2 since 2017. Despite this ARB has historically sustained a higher ratio of above 3 and thus has greater liquidity. However, the superior current ratio may mean that ARB is not allocating its CA’s efficiently. Ultimately, both companies have a strong capacity to settle their short term-debts, although BAP may be more efficient in allocating their CA’s.    
+
+BAP’s quick ratio has been below 1 since 2018; the company does not have the resources to instantly repay their CLs and relies heavily on inventory to repay debts. Again, ARB’s quick ratio always being above 1 highlights its superior liquidity. Overall, the liquidity ratios of the two companies show that ARB carries less liquidity risk than BAP.  
+
+The higher debt-to-capital and debt-to-equity ratio of BAP shows greater risk of insolvency than ARB. The ratios for BAP were greater for all years, meaning the company is more leveraged than ARB, which appears to have greater financial health with a better solvency outlook. However, the ratios have seen a diminishing trend for BAP and the converse is true for ARB. Ultimately, although the ARB’s solvency risk is lower, both companies have a relatively healthy financial outlook.
+
 # Stock Price Performance
 
-# Conclusion and Outlook opinion
+ARB’s stock price has gradually risen from 2020-2021, with fluctuations arising from the COVID pandemic. From 1 July 2020, the price was in a state of slow incline, following from the previous time period, and there is a general incline until 31 June 2021. However, there were peaks followed by troughs from October-November 2020, January-March 2021 and May 2021. These spikes were likely caused by news of the large increases in profitability and investment into new products from 2020-2021; investors valued ARB even higher. Another factor would be transitions out of lockdown; not only was travel postponed and accumulated until restrictions eased, but road trips intrastate were more popular due to difficulty of overseas/interstate travel.
 
-# References
+Following ARB’s steep climb in profit in 2021 (and the prospect of further growth), the abolishment of lockdown and restrictions, and the ever-increasing popularity of travel, it can be expected that its stock price will continue to rise at a steady rate. Using historical trends, ARB’s stock price has been on average, uniformly increasing, with the exceptions of the aforementioned spikes.
+
+# Conclusion
+
+The automotive accessory industry in Australia is largely dominated by ARB Corporate Limited, which manufactures and wholesales a wide variety of unspecialised and specialised car accessories, and maintains competitive advantage and high profitability from global expansion,  consumer demand focus and R&D for new products mentioned above.
+
+Compared to competitor Bapcor Limited, ARB has strong solvency and liquidity, and below average leverage; its stock is less risky, from high current and quick ratios, and debt to capital/equity ratios of below 33%. ARB also has superior efficiency in producing revenue from its assets and equity; ARB’s return on assets and equity have hovered around/above 20% and 15% respectively, while BAP’s has had half the ROA and around 5% lower ROE’s. ARB’s stock is constantly increasing (on average); this is driven by the high profitability (especially in the last financial year) and increasing efficiency in profit making, and the aforementioned low risk and diversification of products (following demand) and sourcing. It is therefore expected for ARB to continually grow its profits, catalogue, efficiency and therefore stock price and reputation.
 
 <div id="refs"></div>
 
